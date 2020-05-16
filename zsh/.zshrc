@@ -98,15 +98,21 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Homestead
-function homestead() {
-    ( cd ~/Homestead && vagrant $* )
-}
-
-#ASDF
+# asdf
 . $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
 
 # Tilix
 if [ $TILIX_ID ] || [ $VTE_VERSION ]; then
-        source /etc/profile.d/vte.sh
+    source /etc/profile.d/vte.sh
 fi
+
+# load alias
+for file in $HOME/.dotfiles/zsh/aliases/*.zsh; do
+    source $file
+done
+
+# load exports
+for file in $HOME/.dotfiles/zsh/exports/*.zsh; do
+    source $file
+done

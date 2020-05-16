@@ -1,0 +1,13 @@
+[user]
+	name = Paulo Castellano
+	email = paulofcastellano@gmail.com
+
+[github]
+	user = paulocastellano
+
+[core]
+	editor = vim
+	excludesfile = ~/.dotfiles/git/gitignore
+
+[color]
+	ui = auto
