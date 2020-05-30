@@ -118,4 +118,4 @@ set modelines=0
 set nomodeline
 
 " ================ Custom Settings ========================
-so ~/.paulo/vim/settings.vim
+so ~/.dotfiles/vim/settings.vim
