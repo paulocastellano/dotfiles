@@ -5,6 +5,9 @@ alias dup="docker-compose up -d"
 alias php="docker-compose exec app php"
 alias composer="docker-compose exec app composer"
 
+# Laravel Sail
+alias sail="bash vendor/bin/sail"
+
 # Kubernetes
 alias k-use-context="kubectl config use-context"
 alias k-get-contexts="kubectl config get-contexts"
